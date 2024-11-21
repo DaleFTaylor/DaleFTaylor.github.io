@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -19,7 +20,7 @@
 
     /* Sidebar style for Table of Contents */
     .sidebar {
-      width: 200px; /* Make sidebar narrower */
+      width: 200px; /* Narrow sidebar */
       background-color: #f4f4f4;
       padding-top: 10px; /* Move the heading up */
       position: fixed;
@@ -27,7 +28,7 @@
       overflow: auto;
       font-size: 18px;
       padding-left: 10px;
-      top: 150px; /* Shift down to accommodate header */
+      top: 150px; /* Shift sidebar down to accommodate the header */
     }
 
     .sidebar a {
@@ -49,16 +50,16 @@
       background-color: #87CEEB; /* Sky blue color */
       color: white; /* White text color */
       text-align: left; /* Align text to the left */
-      padding: 50px 20px; /* Space around the text */
+      padding: 20px 30px; /* Padding around the text */
       font-size: 30px; /* Larger font size */
-      font-weight: bold; /* Make the text bold */
-      position: relative; /* So that icons can be positioned absolutely inside it */
+      font-weight: bold; /* Bold text */
+      position: fixed; /* Fix the header at the top */
       top: 0;
       left: 0;
       z-index: 1; /* Make sure header is on top of the content */
     }
 
-    /* LinkedIn and ORCID icon styling */
+    /* LinkedIn, ORCID, and Twitter icon styling */
     .icon {
       position: absolute;
       bottom: 10px; /* Place the icons at the bottom of the header */
@@ -84,9 +85,9 @@
 
   <!-- Header section (Sky blue banner) -->
   <div class="header">
-    Dale Taylor Bioinformatic Portfolio
+    Dale Taylor, PhD Bsc(Hon)
 
-    <!-- LinkedIn and ORCID icons at the bottom right of the header -->
+    <!-- LinkedIn, ORCID, and Twitter icons at the bottom right of the header -->
     <div class="icon">
       <!-- LinkedIn Icon -->
       <a href="https://www.linkedin.com/in/dale-taylor-bioinformatics/" target="_blank">
@@ -94,8 +95,13 @@
       </a>
 
       <!-- ORCID Icon -->
-      <a href="https://orcid.org/0000-0001-6766-6948" target="_blank"> <!-- Replace with your actual ORCID ID -->
+      <a href="https://orcid.org/0000-0002-1234-5678" target="_blank"> <!-- Replace with your actual ORCID ID -->
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/ORCID_iD.svg/2048px-ORCID_iD.svg.png" alt="ORCID">
+      </a>
+
+      <!-- Twitter Icon -->
+      <a href="https://twitter.com/dale_taylor_bioinformatics" target="_blank"> <!-- Replace with your actual Twitter -->
+        <img src="https://www.svgrepo.com/show/11841/twitter.svg" alt="Twitter">
       </a>
     </div>
   </div>
@@ -114,7 +120,7 @@
     <!-- Content section for Home Page -->
     <div id="home">
       <h3>Home</h3>
-      <p>Welcome to my page. Here you will find my work and contacts.</p>
+      <p>Welcome to my bioinformatics portfolio. Here you will find my work and projects related to bioinformatics.</p>
     </div>
   </div>
 
