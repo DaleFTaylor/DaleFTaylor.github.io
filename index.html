@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -19,9 +20,9 @@
 
     /* Sidebar style for Table of Contents */
     .sidebar {
-      width: 250px;
+      width: 200px; /* Make sidebar narrower */
       background-color: #f4f4f4;
-      padding-top: 20px;
+      padding-top: 10px; /* Move the heading up */
       position: fixed;
       height: 100%;
       overflow: auto;
@@ -43,6 +44,18 @@
       background-color: #ddd;
     }
 
+    /* LinkedIn icon */
+    .linkedin-icon {
+      display: block;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .linkedin-icon img {
+      width: 30px; /* Set the size of the LinkedIn icon */
+      height: 30px;
+    }
+
     /* Header style - make it extend across the whole page */
     .header {
       width: 100%;
@@ -57,10 +70,10 @@
       left: 0;
       z-index: 1; /* Make sure header is on top of the content */
     }
-    
+
     /* Main content area */
     .content {
-      margin-left: 260px; /* Space for the sidebar */
+      margin-left: 220px; /* Space for the narrower sidebar */
       padding: 20px;
       flex-grow: 1;
       margin-top: 150px; /* Ensure content doesn't overlap with the fixed header */
@@ -76,11 +89,18 @@
 
   <!-- Sidebar with Table of Contents -->
   <div class="sidebar">
-    <h2>Pages</h2>
+    <h2 style="margin-top: 0;">Table of Contents</h2> <!-- Move heading up slightly -->
     <a href="index.html">Home</a> <!-- Link to the main page -->
     <a href="about.html">About</a> <!-- Link to the About page -->
     <a href="projects.html">Projects</a> <!-- Link to the Projects page -->
     <a href="contact.html">Contact</a> <!-- Link to the Contact page -->
+    
+    <!-- LinkedIn Icon -->
+    <div class="linkedin-icon">
+      <a href="https://www.linkedin.com/in/dale-taylor-5004a41b5/" target="_blank">
+        <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon.svg" alt="LinkedIn">
+      </a>
+    </div>
   </div>
 
   <!-- Main content section -->
@@ -94,3 +114,4 @@
 
 </body>
 </html>
+
