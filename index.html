@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dale Taylor</title>
+  <title>Dale Taylor Bioinformatic Portfolio</title>
   
   <!-- Link to Google Fonts for Jost font -->
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
@@ -58,7 +58,7 @@
       top: 0;
       left: 0;
       z-index: 1; /* Make sure header is on top of the content */
-      height: 75px; /* Ensure the header is tall enough */
+      height: 80px; /* Ensure the header is tall enough */
     }
 
     /* LinkedIn, ORCID, and Twitter icon styling */
@@ -66,12 +66,17 @@
       position: absolute;
       bottom: 10px; /* Place the icons at the bottom of the header */
       left: 30px; /* Move icons to the left within the header */
+      display: flex; /* Use flexbox to arrange icons side by side */
+      gap: 10px; /* Add space between the icons */
+    }
+
+    .icon a {
+      display: inline-block; /* Ensure that the icons are properly aligned */
     }
 
     .icon img {
       width: 30px; /* Set the size of the icon */
       height: 30px;
-      margin-left: 10px; /* Add some space between icons */
     }
 
     /* Main content area */
@@ -92,17 +97,17 @@
     <!-- LinkedIn, ORCID, and Twitter icons at the bottom left of the header -->
     <div class="icon">
       <!-- LinkedIn Icon -->
-      <a href="https://www.linkedin.com/in/dale-taylor-5004a41b5/" target="_blank">
+      <a href="https://www.linkedin.com/in/dale-taylor-bioinformatics/" target="_blank">
         <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon.svg" alt="LinkedIn">
       </a>
 
       <!-- ORCID Icon -->
-      <a href="https://orcid.org/0000-0001-6766-6948" target="_blank"> <!-- Replace with your actual ORCID ID -->
+      <a href="https://orcid.org/0000-0002-1234-5678" target="_blank"> <!-- Replace with your actual ORCID ID -->
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/ORCID_iD.svg/2048px-ORCID_iD.svg.png" alt="ORCID" style="width: 30px; height: 30px;">
       </a>
 
       <!-- Twitter Icon -->
-      <a href="https://x.com/DaleFTaylor" target="_blank"> <!-- Replace with your actual Twitter -->
+      <a href="https://twitter.com/dale_taylor_bioinformatics" target="_blank"> <!-- Replace with your actual Twitter -->
         <img src="https://www.svgrepo.com/show/11841/twitter.svg" alt="Twitter" style="width: 30px; height: 30px;">
       </a>
     </div>
@@ -110,20 +115,4 @@
 
   <!-- Sidebar with Table of Contents -->
   <div class="sidebar">
-    <h2 style="margin-top: 0; padding-bottom: 10px;">Pages</h2> <!-- Move heading up slightly -->
-    <a href="index.html">Home</a> <!-- Link to the main page -->
-    <a href="projects.html">Projects</a> <!-- Link to the Projects page -->
-    <a href="contact.html">Contact</a> <!-- Link to the Contact page -->
-  </div>
-
-  <!-- Main content section -->
-  <div class="content">
-    <!-- Content section for Home Page -->
-    <div id="home">
-      <h3>Home</h3>
-      <p>Welcome to my bioinformatics portfolio. Here you will find my work and projects related to bioinformatics.</p>
-    </div>
-  </div>
-
-</body>
-</html>
+    <h2 style="margin-top: 0; paddin
