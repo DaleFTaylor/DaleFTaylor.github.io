@@ -89,29 +89,41 @@
 
     /* Main content area */
     .content {
+      display: none;
       margin-left: 150px; /* Space for the sidebar */
       padding: 20px;
       flex-grow: 1;
       margin-top: 110px; /* Ensure content doesn't overlap with the fixed header */
     }
-  </style>
 
-  <script>
-    function checkPassword() {
-      const password = prompt("Enter the password to access this page:");
-      if (password === "hypoxiarules") {
-        alert("Access Granted!");
-      } else {
-        alert("Access Denied!");
-        window.location.href = "index.html"; // Redirect to home if password is wrong
-      }
+    .visible {
+      display: block; /* Show content when password is correct */
+    }
+    
+  </style>
+  
+  <div class="content" id="protectedContent">
+    <h2>Projects</h2>
+    <p>Welcome to the projects page. Here are my works:</p>
+    <ul>
+      <li>Project 1: Bioinformatics Analysis</li>
+      <li>Project 2: Data Visualization in R</li>
+      <li>Project 3: Differential Expression Analysis</li>
+    </ul>
+  </div>
+
+  <<script>
+    // Prompt for password
+    const password = "hypoxiarules"; // Set your desired password
+    const content = document.getElementById("protectedContent");
+
+    const userPassword = prompt("Enter the password to view this page:");
+    if (userPassword === password) {
+      content.classList.add("visible"); // Show content if password is correct
+    } else {
+      alert("Incorrect password. You cannot access this page.");
     }
   </script>
   
-</head>
-  
-<body onload="checkPassword()">
-  <h1>Projects</h1>
-  <p>Welcome to the Projects page!</p>
 </body>
 </html>
