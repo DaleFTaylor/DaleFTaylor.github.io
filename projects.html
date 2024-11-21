@@ -4,17 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dale Taylor</title>
-  <script>
-    function checkPassword() {
-      const password = prompt("Enter the password to access this page:");
-      if (password === "hypoxiarules") {
-        alert("Access Granted!");
-      } else {
-        alert("Access Denied!");
-        window.location.href = "index.html"; // Redirect to home if password is wrong
-      }
-    }
-  </script>
   
   <!-- Link to Google Fonts for Jost font -->
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
@@ -106,6 +95,18 @@
       margin-top: 110px; /* Ensure content doesn't overlap with the fixed header */
     }
   </style>
+
+  <script>
+    function checkPassword() {
+      const password = prompt("Enter the password to access this page:");
+      if (password === "hypoxiarules") {
+        alert("Access Granted!");
+      } else {
+        alert("Access Denied!");
+        window.location.href = "index.html"; // Redirect to home if password is wrong
+      }
+    }
+  </script>
   
 </head>
   
