@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects</title>
+  <title>Dale Taylor</title>
   <script>
     function checkPassword() {
       const password = prompt("Enter the password to access this page:");
@@ -15,6 +15,98 @@
       }
     }
   </script>
+  
+  <!-- Link to Google Fonts for Jost font -->
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKBlEjJhMMLaSSzN4ucjIxORyhXlN_inv9ww&s" type="image/svg+xml">
+  
+  <style>
+    /* General body style */
+    body {
+      font-family: 'Jost', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+    }
+
+    /* Sidebar style for Table of Contents */
+    .sidebar {
+      width: 130px; /* Narrow sidebar */
+      background-color: #f4f4f4;
+      padding-top: 10px; /* Move the heading up */
+      position: fixed;
+      height: 100%;
+      overflow-y: auto; /* Allow vertical scrolling if the content overflows */
+      font-size: 22px; /* Set font size */
+      padding-left: 10px;
+      top: 130px; /* Start right below the header */
+      margin-top: 0; /* Ensure the sidebar starts from the top without gaps */
+    }
+    
+    .sidebar h2 {
+      margin-top: 0; /* Remove any margin at the top */
+      margin-bottom: 5px; /* Reduce space below the heading */
+      padding-bottom: 5px; /* Ensure there's no extra padding under the heading */
+    }
+    
+    .sidebar a {
+      display: block;
+      color: #000;
+      padding: 8px 10px; /* Add a bit of padding on the sides for the links */
+      text-decoration: none;
+      margin-bottom: 5px; /* Reduce space between links */
+      font-weight: bold;
+    }
+    
+    .sidebar a:hover {
+      background-color: #ddd;
+    }
+
+    /* Header style - make it extend across the whole page */
+    .header {
+      width: 100%;
+      background-color: #87CEEB; /* Sky blue color */
+      color: white; /* White text color */
+      text-align: left; /* Align text to the left */
+      padding: 30px 30px; /* Padding around the text */
+      font-size: 30px; /* Larger font size */
+      font-weight: bold; /* Bold text */
+      position: fixed; /* Fix the header at the top */
+      top: 0;
+      left: 0;
+      z-index: 1; /* Make sure header is on top of the content */
+      height: 75px; /* Ensure the header is tall enough */
+    }
+
+    /* LinkedIn, ORCID, and Twitter icon styling */
+    .icon {
+      position: absolute;
+      bottom: 10px; /* Place the icons at the bottom of the header */
+      left: 30px; /* Move icons to the left within the header */
+      display: flex; /* Use flexbox to arrange icons side by side */
+      gap: 10px; /* Add space between the icons */
+    }
+
+    .icon a {
+      display: inline-block; /* Ensure that the icons are properly aligned */
+    }
+
+    .icon img {
+      width: 30px; /* Set the size of the icon */
+      height: 30px;
+    }
+
+    /* Main content area */
+    .content {
+      margin-left: 150px; /* Space for the sidebar */
+      padding: 20px;
+      flex-grow: 1;
+      margin-top: 110px; /* Ensure content doesn't overlap with the fixed header */
+    }
+  </style>
+  
 </head>
   
 <body onload="checkPassword()">
