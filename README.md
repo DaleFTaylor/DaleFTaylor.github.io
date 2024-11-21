@@ -1,1 +1,0 @@
-# daleftaylor.github.io
